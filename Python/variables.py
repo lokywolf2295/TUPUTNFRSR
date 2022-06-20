@@ -1,3 +1,6 @@
+from operator import truediv
+
+
 miVariable = 3
 print(miVariable)
 print(type(miVariable)) # type permite ver el tipo de variable
@@ -82,8 +85,7 @@ perimetro = (alto+ancho) * 2
 print("El area del rectangulo es: ", area)
 print(f'El perimetro del rectangulo es: {perimetro}')
 
-
-#Operadores de Asignación
+"""#Operadores de Asignación"""
 
 
 miVariable3 = 10 #lo que hacemos es asignar un valor a la variable
@@ -151,7 +153,7 @@ if a < b:
 else:
     print("a es mayor que b")
 
-
+#Ejercicio1
 alto = int(input("ingrese la altura del rectangulo: "))
 ancho = int(input("ingrese el ancho del rectangulo: "))
 area = alto * ancho
@@ -159,17 +161,100 @@ perimetro = (alto+ancho) * 2
 print("El area del rectangulo es: ", area)
 print(f'El perimetro del rectangulo es: {perimetro}')
 
-
+#Ejercicio2
 num = int(input("la edad del usuario: ")) #ingreso edad por usuario
 if num >= 18 :
     print(f"Eres mayor de edad ")
 else:
     print(f"Eres menor de edad ")
 
-
+#Ejercicio3
 num = int(input("ingrese un numero: ")) #ingreso numero por usuario
 print(f"el residuo de la division es: {num % 2}")
 if num % 2 == 0:
     print(f"el numero {num} es par ")
 else:
     print(f"el numero {num} es impar ")
+
+
+"""Operadores Lógicos"""
+
+a = True
+b = True
+resultado = a and b
+
+print(resultado)
+
+resultado = a or b
+
+print(resultado)
+
+resultado = not b
+
+print(resultado)
+
+#Ejercicio1
+num = int(input("Enter a number: "))
+if 0 <= num <= 5: 
+    print(f"The number {num} is within the range: ")
+else: 
+    print(f"The number {num} is out the range: ")
+
+#Ejercicio2
+vacaciones = False
+diaDescanso = True
+
+if (vacaciones or diaDescanso):
+    print('Tiene trabajo que hacer')
+else:
+    print('Puede asistir al juego')
+
+if not(vacaciones or diaDescanso):
+    print('Tiene trabajo que hacer')
+else:
+    print('Puede asistir al juego')
+
+#Ejercicio3
+edad = int(input("Ingrese su edad"))
+if edad >=20 and edad <= 30: 
+    print(f"Su edad {edad}, esta dentro del rango")
+else: 
+    print(f"Su edad {edad}, no esta dentro del rango")
+
+#Ejercicio4
+
+num1 = int(input("ingrese su primer numero: ")) 
+num2 = int(input("ingrese su segundo numero: "))
+
+if (num1 > num2):
+    numeroMayor = num1
+    print(f"El numero mayor es: {numeroMayor}")
+    if (num2 < num1):
+        numeroMayor = num2
+        print(f"El numero mayor es: {numeroMayor}")
+    else:
+        print("Ambos numeros son iguales")
+
+#Ejercicio5
+
+print("Ingrese los siguientes Datos del libro:")
+nombreLibro = input("Digite el nombre del libro: ")
+iDLibro = int(input("Digite el ID del libro: "))
+precioLibro = float(input("Digite el nombre del libro: "))
+envio = input("¿El envio es gratuito?: ")
+if (envio == "si" or envio == "Si" or envio == "SI"):
+    envio = True
+    print(f'''
+              El nombre del libro es: {nombreLibro}; 
+              El ID es: {iDLibro}; 
+              El precio es: ${precioLibro} 
+              Cuenta con envío gratis
+    ''')
+else:
+    envio = False
+    print(f'''
+    El nombre del libro es: {nombreLibro}, 
+    El ID es: {iDLibro}, 
+    El precio es: ${precioLibro} 
+    No cuenta con envío gratis
+    ''')

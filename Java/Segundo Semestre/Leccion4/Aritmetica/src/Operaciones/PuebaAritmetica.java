@@ -24,7 +24,7 @@ public class PuebaAritmetica {
         Aritmetica aritmetica2 = new Aritmetica(5, 8);
         System.out.println("aritmetica2 = " + aritmetica2.a);
         System.out.println("aritmetica2 = " + aritmetica2.b);
-        //aritmetica1 = null; nunca utilizar esto, no de debe hacer
+        //aritmetica1 = null; nunca utilizar esto, no se debe hacer
         //System.gc(); método para limpiar residuos, es pesado, no utilizar
         Persona persona = new Persona("Ariel", "Betancud");
         System.out.println("persona = " + persona);

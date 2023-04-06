@@ -13,7 +13,7 @@ public class Computadora {
         this.idComputadora = ++Computadora.contadorComputadoras;
     }
 
-    public Computadora(int idComputadora, String nombre, Monitor monitor, Teclado teclado, Raton raton) {
+    public Computadora( String nombre, Monitor monitor, Teclado teclado, Raton raton) {
         this();
         this.nombre = nombre;
         this.monitor = monitor;

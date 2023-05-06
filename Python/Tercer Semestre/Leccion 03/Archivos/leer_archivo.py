@@ -7,8 +7,10 @@ try:
     # print(archivo.readline())  # lee la segunda linea del archivo continuando con el texto.
 
     # vamos a iterar el archivo, cad una de las lineas
-    for linea in archivo:
-        print(linea)
+    #for linea in archivo:
+        # print(linea): iteramos todos los elementos del archivo
+
+    print(archivo.readlines()) #accedemos al archivo como si fuera una lista, imprimiendo todas sus lineas
 except Exception as e:
     print(e)
 finally:

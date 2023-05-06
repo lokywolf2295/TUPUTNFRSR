@@ -7,6 +7,7 @@ try:
     archivo.write("como por ejemplo: acción, ejecución y producción\n")  # esta linea al pasarse al txt ocaciona error por falta del encoding
     archivo.write('Las letras que recive archivo.write() son: \nr read leer, \na append añadir, \nw write escribir, \nx crea un archivo,')
     archivo.write("\nt esta para texto o text, \nb archivos binarios, \nr+ y w+ son iguales read and write leer y escribir\n")
+    archivo.write("Saludos a todos los alumnos de la Tecnicatura Universitaria en Programación\n")
     archivo.write("Con esto terminamos")
 except Exception as e:
     print(e)

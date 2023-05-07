@@ -1,0 +1,12 @@
+Programamos con diferentes tipos de archivos, ahora en txt
+Los acentos son importantes para las palabras
+como por ejemplo: acción, ejecución y producción
+Las letras que recive archivo.write() son: 
+r read leer, 
+a append añadir, 
+w write escribir, 
+x crea un archivo,
+t esta para texto o text, 
+b archivos binarios, 
+r+ y w+ son iguales read and write leer y escribir
+Con esto terminamos

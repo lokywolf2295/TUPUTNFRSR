@@ -1,0 +1,2 @@
+//while
+console.log("while");

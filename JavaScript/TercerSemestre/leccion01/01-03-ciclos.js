@@ -19,3 +19,13 @@ for(let contador3 = 0; contador3 < 3; contador3++){
     console.log(contador3);
 }
 console.log("Fin del ciclo for");
+
+//Palabra reservada break
+for(let contador3 = 0; contador3 < 3; contador3++){
+    if(contador3 % 2 == 0){
+        console.log(contador3); //Muestra solo el numero par
+        break;
+    }
+}
+console.log("Termina el ciclo al encontrar el primer número par");
+

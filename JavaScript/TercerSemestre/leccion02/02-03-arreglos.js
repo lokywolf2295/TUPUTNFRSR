@@ -27,3 +27,9 @@ console.log(autos);
 //Tercera forma de agregar elementos al arreglo teniendo CUIDADO de no sobreescribir un elemento
 autos[6] = 'Volvo'; // Agrega el elemento en la posición 6 del arreglo
 console.log(autos); // Imprime los elementos del arreglo y los elementos vacíos porque la posición 5 no existe
+
+//Como preguntar si una variable es un arreglo
+console.log(Array.isArray(autos)); // Imprime true si la variable es un arreglo
+
+//Segunda forma de preguntar si una variable es un arreglo
+console.log(autos instanceof Array); // Imprime true si la variable es una instancia  de la clase Array

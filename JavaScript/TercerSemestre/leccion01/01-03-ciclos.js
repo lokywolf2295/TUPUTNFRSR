@@ -29,3 +29,12 @@ for(let contador3 = 0; contador3 < 3; contador3++){
 }
 console.log("Termina el ciclo al encontrar el primer número par");
 
+//Palabra reservada continue
+for(let contador3 = 0; contador3 <= 10; contador3++){
+    if(contador3 % 2 !== 0){
+        continue; //Salta a la siguiente iteración
+    }
+    console.log(contador3); //Muestra todos los numeros pares
+}
+console.log("Termina el ciclo");
+

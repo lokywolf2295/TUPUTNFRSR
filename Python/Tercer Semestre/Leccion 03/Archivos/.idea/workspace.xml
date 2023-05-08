@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d664a26e-04b3-4e12-ae7f-6d5b34de7869" name="Changes" comment="update(Python): test enter and exit methods of the class ManejorArchivos.py" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="2POwPoEpAou4Zm9QpVi4oreXlrG" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\matia\GitHub\TUPUTNFRSR\Python\Tercer Semestre\Leccion 03\Archivos" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d664a26e-04b3-4e12-ae7f-6d5b34de7869" name="Changes" comment="" />
+      <created>1683341414180</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683341414180</updated>
+      <workItem from="1683341416201" duration="582000" />
+      <workItem from="1683395671011" duration="207000" />
+      <workItem from="1683395888587" duration="4893000" />
+      <workItem from="1683413711602" duration="6208000" />
+    </task>
+    <task id="LOCAL-00001" summary="Update(Python): add manejo_archivos.py project">
+      <created>1683341828723</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1683341828723</updated>
+    </task>
+    <task id="LOCAL-00002" summary="update(Python): add content in the file test.txt from the project file_management.py">
+      <created>1683398158999</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683398158999</updated>
+    </task>
+    <task id="LOCAL-00003" summary="update(Python): add the project leer_archivo.py and update the other ones">
+      <created>1683399709428</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683399709428</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update(Python): add new methods to print in the project leer_archivo.py">
+      <created>1683400358080</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683400358080</updated>
+    </task>
+    <task id="LOCAL-00005" summary="update(Python): add print method using for linea in archivo in the project read_file.py">
+      <created>1683400995449</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1683400995449</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update(Python): add the copy method using copia.txt file in the project leer_archivo.py">
+      <created>1683420112616</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1683420112616</updated>
+    </task>
+    <task id="LOCAL-00007" summary="update(Python): add context manager method in the project archivos_con_with.py">
+      <created>1683423991165</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1683423991165</updated>
+    </task>
+    <task id="LOCAL-00008" summary="update(Python): add ManejoArchivos class in the project ManejoArchivos.py">
+      <created>1683424766310</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1683424766310</updated>
+    </task>
+    <task id="LOCAL-00009" summary="update(Python): test enter and exit methods of the class ManejorArchivos.py">
+      <created>1683425372535</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1683425372535</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Update(Python): add manejo_archivos.py project" />
+    <MESSAGE value="update(Python): add content in the file test.txt from the project file_management.py" />
+    <MESSAGE value="update(Python): add the project leer_archivo.py and update the other ones" />
+    <MESSAGE value="update(Python): add new methods to print in the project leer_archivo.py" />
+    <MESSAGE value="update(Python): add print method using for linea in archivo in the project read_file.py" />
+    <MESSAGE value="update(Python): add the copy method using copia.txt file in the project leer_archivo.py" />
+    <MESSAGE value="update(Python): add context manager method in the project archivos_con_with.py" />
+    <MESSAGE value="update(Python): add ManejoArchivos class in the project ManejoArchivos.py" />
+    <MESSAGE value="update(Python): test enter and exit methods of the class ManejorArchivos.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="update(Python): test enter and exit methods of the class ManejorArchivos.py" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Archivos$leer_archivo.coverage" NAME="leer_archivo Coverage Results" MODIFIED="1683417261840" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Archivos$archivos_con_with.coverage" NAME="archivos_con_with Coverage Results" MODIFIED="1683424947426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Archivos$manejo_archivos.coverage" NAME="manejo_archivos Coverage Results" MODIFIED="1683399326618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

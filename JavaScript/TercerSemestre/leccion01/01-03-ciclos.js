@@ -38,3 +38,12 @@ for(let contador3 = 0; contador3 <= 10; contador3++){
 }
 console.log("Termina el ciclo");
 
+//Etiqutas label
+inicio:
+for(let contador3 = 0; contador3 <= 10; contador3++){
+    if(contador3 % 2 !== 0){
+        break inicio; //corta la ejecución del ciclo
+    }
+    console.log(contador3); //Muestra el primer numero par
+}
+console.log("Termina el ciclo");

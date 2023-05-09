@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e9e411de-bd60-4486-8325-efdf52356d94" name="Changes" comment="Update: Add exercise to  mundoPC class in MundoPC project" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2O1hpHcuv7KvFL1R8EWIpAHJsgV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="mundoPC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ar.com.system2023.mundopc.mundoPC" />
+      <module name="MundoPC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ar.com.system2023.mundopc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.mundoPC" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e9e411de-bd60-4486-8325-efdf52356d94" name="Changes" comment="" />
+      <created>1680734178976</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680734178976</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Update: Add DispositivoEntrada class in MundoPC project in the Tercer Semestre folder">
+      <created>1680736515574</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680736515574</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Update: Add Raton class in MundoPC project">
+      <created>1680738143213</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680738143213</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fixed: fix Raton class in MundoPC project">
+      <created>1680738510093</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1680738510093</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Update: Add Teclado class in MundoPC project">
+      <created>1680738805103</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680738805103</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Update: Add Monitor class in MundoPC project">
+      <created>1680739408338</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680739408338</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Update: Add Computadora class in MundoPC project">
+      <created>1680740809708</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1680740809708</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Update: Add Orden class in MundoPC project">
+      <created>1680742871187</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1680742871187</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Update: Add mostrarOrden method in Orden class in MundoPC project">
+      <created>1680744868190</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1680744868190</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Fixed: fix Computer class in its empty constructor.">
+      <created>1680747286585</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1680747286585</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Update: Add mundoPC class in MundoPC project">
+      <created>1680748126159</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1680748126159</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Update: Add exercise to  mundoPC class in MundoPC project">
+      <created>1680749440542</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1680749440542</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update: Add DispositivoEntrada class in MundoPC project in the Tercer Semestre folder" />
+    <MESSAGE value="Update: Add Raton class in MundoPC project" />
+    <MESSAGE value="Fixed: fix Raton class in MundoPC project" />
+    <MESSAGE value="Update: Add Teclado class in MundoPC project" />
+    <MESSAGE value="Update: Add Monitor class in MundoPC project" />
+    <MESSAGE value="Update: Add Computadora class in MundoPC project" />
+    <MESSAGE value="Update: Add Orden class in MundoPC project" />
+    <MESSAGE value="Update: Add mostrarOrden method in Orden class in MundoPC project" />
+    <MESSAGE value="Fixed: fix Computer class in its empty constructor." />
+    <MESSAGE value="Update: Add mundoPC class in MundoPC project" />
+    <MESSAGE value="Update: Add exercise to  mundoPC class in MundoPC project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update: Add exercise to  mundoPC class in MundoPC project" />
+  </component>
+</project>

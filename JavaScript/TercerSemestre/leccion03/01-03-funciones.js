@@ -45,3 +45,14 @@ console.log(miFuncionTexto);
 const sumarFuncionTipoFlecha = (a, b) => a + b; //no necesita return ni llaves
 resultado = sumarFuncionTipoFlecha(3, 5);
 console.log(resultado);
+
+//Diferencia entre Parametros y Argumentos
+//Parametros son las variables que se definen en la firma de la función
+//Argumentos son los valores que se pasan a la función al momento de llamarla
+let sumar = function (a = 4, b = 5) { //se le puede asignar un valor por defecto a los parametros
+    console.log(arguments[0]); //imprime el primer argumento que recibe la función
+    console.log(arguments[1]); //imprime el segundo argumento que recibe la función
+    return a + b + arguments[2]; //imprime la suma de los argumentos que recibe la función
+}
+resultado = sumar(3, 5, 8); //al llamar la función se le pasan los argumentos
+console.log(resultado);

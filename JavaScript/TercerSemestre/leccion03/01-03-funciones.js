@@ -21,3 +21,8 @@ console.log(resultado);
 let x = function (a, b) {return a + b}; //necesita cierre con punto y coma
 resultado = x(5,6) //al llamarla se pone la variable y paréntesis
 console.log(resultado);
+
+//Funciones de tipo self-invoking
+(function (a, b) { //este tipo de funciones no puede ser llamada mas de una vez ya que no fué asignada a una variable
+    console.log('Ejecutando la función: ' + (a + b));
+})(3, 4); //necesita cierre con punto y coma

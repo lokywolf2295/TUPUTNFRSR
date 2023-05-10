@@ -8,3 +8,11 @@ function miFuncion(a, b) {
 
 //Llamada a una función
 miFuncion(2, 3);
+
+//Uso de la palabra reservada return
+function miFuncion2(a, b) {
+    return a + b;
+}
+
+let resultado = miFuncion2(2, 9);
+console.log(resultado);

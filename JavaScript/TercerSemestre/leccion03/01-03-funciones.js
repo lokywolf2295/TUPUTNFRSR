@@ -67,3 +67,12 @@ function sumarTodo() {
     }
     return suma;
 }
+
+//Tipos primitivos
+let k = 10;//variable global
+function cambiarValor(a) { //Paso por valor
+    a = 20; //variable local
+}
+
+cambiarValor(k);
+console.log(k); //imprime 10 porque la variable local no afecta a la variable global

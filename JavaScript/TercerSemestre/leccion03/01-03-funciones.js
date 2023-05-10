@@ -56,3 +56,14 @@ let sumar = function (a = 4, b = 5) { //se le puede asignar un valor por defecto
 }
 resultado = sumar(3, 5, 8); //al llamar la función se le pasan los argumentos
 console.log(resultado);
+
+//Suma de todos los argumentos que recibe la función
+let respuesta = sumarTodo(1, 2, 3, 4, 5, 6, 7, 8, 9, 10); //al llamar la función se le pasan los argumentos
+console.log(respuesta);
+function sumarTodo() {
+    let suma = 0;
+    for (let i = 0; i < arguments.length; i++) {
+        suma += arguments[i]; //arguments es un arreglo que contiene todos los argumentos que recibe la función
+    }
+    return suma;
+}

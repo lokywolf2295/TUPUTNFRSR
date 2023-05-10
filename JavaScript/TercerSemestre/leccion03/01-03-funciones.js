@@ -76,3 +76,16 @@ function cambiarValor(a) { //Paso por valor
 
 cambiarValor(k);
 console.log(k); //imprime 10 porque la variable local no afecta a la variable global
+
+const persona = { //variable global
+    nombre: 'Juan',
+    apellido: 'Perez'
+}
+
+function cambiarValorObjeto(p1) { //Paso por referencia
+    p1.nombre = 'Carlos'; //variable local pero afecta a la variable global debido a que se utiliza el . haciendo referencia al objeto
+    p1.apellido = 'Lara'; //variable local
+}
+
+cambiarValorObjeto(persona);
+console.log(persona); //imprime Carlos Lara porque la variable local afecta a la variable global

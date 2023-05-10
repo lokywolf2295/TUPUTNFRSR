@@ -40,3 +40,8 @@ miFuncion3(2, 3, 4, 5, 6, 7, 8, 9, 10);
 //toString() convierte un objeto a string
 var miFuncionTexto = miFuncion.toString();
 console.log(miFuncionTexto);
+
+//Funciones tipo flecha (introducidad en Echma 6/ es6)
+const sumarFuncionTipoFlecha = (a, b) => a + b; //no necesita return ni llaves
+resultado = sumarFuncionTipoFlecha(3, 5);
+console.log(resultado);

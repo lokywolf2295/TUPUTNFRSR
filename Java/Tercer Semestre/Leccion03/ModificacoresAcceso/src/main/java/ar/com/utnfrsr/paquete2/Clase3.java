@@ -8,5 +8,6 @@ public class Clase3 extends Clase1 {
         this.atributoProtegido = "Accedemos desde la clase hija";
         System.out.println("Atributo protegido = " + this.atributoProtegido);
         this.atributoPublico = "Es totalmente público";
+        this.metodoProtegido();
     }
 }

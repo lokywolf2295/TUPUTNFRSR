@@ -49,3 +49,24 @@ persona.tel = "65432134"; //Creamos la propiedad tel
 console.log(persona.tel);
 delete persona.tel;
 console.log(persona.tel); //eliminamos la propiedad tel
+
+//Distintas formas de imprimir un objeto
+//Número 1: la más sencilla: concatenar cada valor de cada propiedad
+console.log("Distintas formas de imprimir un objeto forma 1: ");
+console.log(persona.nombre + ", " + persona.apellido + ", " + persona.email + ", " + persona.edad);
+
+//Número 2: Utilizando un ciclo for in
+console.log("Distintas formas de imprimir un objeto forma 2: ");
+for (nombrePropiedad in persona){
+    console.log(persona[nombrePropiedad]);
+}
+
+//Número 3: Utilizando el método Object.values(objeto)
+console.log("Distintas formas de imprimir un objeto forma 3: ");
+let personaArray = Object.values(persona);
+console.log(personaArray);
+
+//Número 4: Utilizando el método JSON.stringify(objeto)
+console.log("Distintas formas de imprimir un objeto forma 4: ");
+let personaString = JSON.stringify(persona);
+console.log(personaString);

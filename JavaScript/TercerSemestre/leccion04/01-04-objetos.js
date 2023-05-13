@@ -1,6 +1,7 @@
 let x = 10; //variable de tipo primitiva
 console.log(x.length);
 
+console.log("Tipos Primitivos");
 //Objeto
 let persona = { //se le asigna un espacio en memoria al objeto
     nombre: "Juan",
@@ -19,6 +20,7 @@ console.log(persona.edad);
 console.log(persona);
 console.log(persona.nombreCompleto());
 
+console.log("Ejecutando con un objeto")
 //Otra forma de acceder a los atributos de un objeto
 let persona2 = new Object(); //Debe crear un nuevo objeto en memoria
 persona2.nombre = "Carlos";
@@ -26,14 +28,17 @@ persona2.direccion = "Saturno 15";
 persona2.tel = "55443322";
 console.log(persona2.tel);
 
+console.log("Creamos un nuevo objeto");
 console.log(persona["apellido"]); //Accedemos como si fuera un arreglo
 
+console.log("Utilizando el metodo for in");
 //for in
 for (nombrePropiedad in persona){  //nombrePropiedad es una variable que se crea en tiempo de ejecución
     console.log(nombrePropiedad);
     console.log(persona[nombrePropiedad]);
 }
 
+console.log("Cambiando y eliminando propiedades a un objeto");
 //Agregar propiedades a un objeto
 persona.apellido = "Carballo"; //Ya existe la propiedad tel, solo se modifica
 console.log(persona);

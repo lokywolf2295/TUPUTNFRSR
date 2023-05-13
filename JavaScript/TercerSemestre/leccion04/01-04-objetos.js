@@ -33,3 +33,14 @@ for (nombrePropiedad in persona){  //nombrePropiedad es una variable que se crea
     console.log(nombrePropiedad);
     console.log(persona[nombrePropiedad]);
 }
+
+//Agregar propiedades a un objeto
+persona.apellido = "Carballo"; //Ya existe la propiedad tel, solo se modifica
+console.log(persona);
+
+//Eliminar una propiedad
+console.log(persona.tel);
+persona.tel = "65432134"; //Creamos la propiedad tel
+console.log(persona.tel);
+delete persona.tel;
+console.log(persona.tel); //eliminamos la propiedad tel

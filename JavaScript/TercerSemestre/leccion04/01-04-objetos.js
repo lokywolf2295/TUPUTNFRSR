@@ -10,3 +10,7 @@ let persona = { //se le asigna un espacio en memoria al objeto
 }
 
 console.log(persona.nombre);
+console.log(persona.apellido);
+console.log(persona.email);
+console.log(persona.edad);
+console.log(persona);

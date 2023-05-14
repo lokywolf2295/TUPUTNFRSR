@@ -15,3 +15,7 @@ cursor = conexion.cursor()
 sentencia = 'SELECT * FROM persona'
 cursor.execute(sentencia) # Ejecutar sentencia SQL
 registros = cursor.fetchall() # Obtener todos los registros de la consulta
+print(registros)
+
+# Cerrar cursor
+cursor.close()

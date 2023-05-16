@@ -7,4 +7,10 @@ public class Gerente extends Empleado{
         super(nombre, sueldo);
         this.departamento = departamento;
     }
+
+    //Sobreescritura del metodo padre
+    @Override
+    public String obtenerDetalles() {
+        return super.obtenerDetalles() + ", Departamento: " + this.departamento;
+    }
 }

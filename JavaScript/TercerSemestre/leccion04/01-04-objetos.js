@@ -109,3 +109,34 @@ console.log(padre);
 
 let madre = new Persona3("Laura", "Quintero", "lquintero@gmail.com");
 console.log(madre);
+
+//Difetentes formas de crear objetos en JavaScript
+//Caso Obejto 1
+let miObjeto = new Object(); //Esta es una opción formal
+//Caso Obejto 2
+let miObjeto2 = {}; //Esta es la forma brebe y más recomendada
+
+//Caso Cadenas 1
+let miCadena1 = new String("Hola"); //Esta es una opción formal
+//Caso Cadenas 2
+let miCadena2 = "Hola"; //Esta es la forma brebe y más recomendada
+
+//Caso Numeros 1
+let miNumero1 = new Number(1); //Esta es una opción formal no recomendable
+//Caso Numeros 2
+let miNumero2 = 1; //Esta es la forma brebe y más recomendada
+
+//Caso Boolean 1
+let miBoolean1 = new Boolean(true); //Esta es una opción formal
+//Caso Boolean 2
+let miBoolean2 = true; //Esta es la forma brebe y más recomendada
+
+//Caso Arreglos 1  
+let miArreglo1 = new Array(); //Esta es una opción formal
+//Caso Arreglos 2
+let miArreglo2 = []; //Esta es la forma brebe y más recomendada
+
+//Caso Funciones 1
+let miFuncion1 = new Function(); //Esta es una opción formal
+//Caso Funciones 2
+let miFuncion2 = function(){}; //Esta es la forma brebe y más recomendada

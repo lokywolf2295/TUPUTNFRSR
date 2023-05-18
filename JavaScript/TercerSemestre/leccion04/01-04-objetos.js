@@ -8,12 +8,20 @@ let persona = { //se le asigna un espacio en memoria al objeto
     apellido: "Perez",
     email: "jperez@gmail.com",
     edad: 28,
+    idioma: "ES",
+    get lang(){
+        return this.idioma.toUpperCase(); //toUpperCase convierte a mayusculas las letras minusculas
+    },
+    set lang(lang){
+        this.idioma = lang.toUpperCase();
+    },
     nombreCompleto: function(){ //metodo o función en JavaScript
         return this.nombre + " " + this.apellido; //this hace referencia al objeto
     },
     get nombreEdad(){ //get es una palabra reservada para obtener un valor
         return "El nombre es: "+this.nombre + ", Edad: " + this.edad;
     }
+    
 }
 
 console.log(persona.nombre);
@@ -77,3 +85,11 @@ console.log(personaString);
 //Usamos el metodo get
 console.log("Usamos el metodo get");
 console.log(persona.nombreEdad);
+
+console.log("Usamos el metodo get para Idiomas");
+console.log(persona.lang);
+
+//Usamos el metodo set
+console.log("Usamos el metodo set para Idiomas");
+persona.lang = "en";
+console.log(persona.lang);

@@ -104,11 +104,14 @@ function Persona3(nombre, apellido, email){ //Función constructor
 }
 let padre = new Persona3("Juan", "Perez", "jperez@gmail.com"); //new crea un nuevo objeto
 padre.nombre = "Carlos";//modificamos el valor de la propiedad nombre
+padre.tel = "55443322"; //agregamos una nueva propiedad
 console.log(padre.nombreCompleto()); //Utilizamos el método nombreCompleto
 console.log(padre);
 
 let madre = new Persona3("Laura", "Quintero", "lquintero@gmail.com");
 console.log(madre);
+console.log(madre.tel); //la propiedad no esta definida en el objeto madre
+console.log(madre.nombreCompleto());
 
 //Difetentes formas de crear objetos en JavaScript
 //Caso Obejto 1
@@ -140,3 +143,11 @@ let miArreglo2 = []; //Esta es la forma brebe y más recomendada
 let miFuncion1 = new Function(); //Esta es una opción formal
 //Caso Funciones 2
 let miFuncion2 = function(){}; //Esta es la forma brebe y más recomendada
+
+//Uso de Prototype
+console.log("Uso de Prototype");
+Persona3.prototype.tel = "55443322"; //Agregamos una nueva propiedad al objeto Persona3 y todos sus objetos heredan la propiedad
+console.log(padre);
+console.log(madre.tel);
+madre.tel = "11223344";
+console.log(madre.tel);

@@ -159,6 +159,7 @@ let persona4 = {
     apellido: "Perez",
     nombreCompleto2: function(titulo, tel){
         return titulo + ": " + this.nombre + " " + this.apellido + ", " + tel;
+        //return this.nombre + " " + this.apellido;
     }
 }
 let persona5 = {
@@ -167,3 +168,7 @@ let persona5 = {
 }
 console.log(persona4.nombreCompleto2("Lic", "55443322"));
 console.log(persona4.nombreCompleto2.call(persona5, "Ing", "11223344")); //El primer parametro es el objeto que va a utilizar el metodo y los demas parametros son los parametros del metodo
+
+//Uso del metodo apply
+console.log("Uso del metodo apply");
+console.log(persona4.nombreCompleto2.apply(persona5, ["Ing", "11223344"])); //El primer parametro es el objeto que va a utilizar el metodo y los demas parametros son los parametros del metodo, pero en un arreglo

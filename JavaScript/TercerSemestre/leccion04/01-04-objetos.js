@@ -98,9 +98,13 @@ function Persona3(nombre, apellido, email){ //Función constructor
     this.nombre = nombre;
     this.apellido = apellido;
     this.email = email;
+    this.nombreCompleto = function(){
+        return this.nombre + " " + this.apellido;
+    }
 }
 let padre = new Persona3("Juan", "Perez", "jperez@gmail.com"); //new crea un nuevo objeto
 padre.nombre = "Carlos";//modificamos el valor de la propiedad nombre
+console.log(padre.nombreCompleto()); //Utilizamos el método nombreCompleto
 console.log(padre);
 
 let madre = new Persona3("Laura", "Quintero", "lquintero@gmail.com");

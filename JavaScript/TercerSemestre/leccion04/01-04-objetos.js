@@ -10,6 +10,9 @@ let persona = { //se le asigna un espacio en memoria al objeto
     edad: 28,
     nombreCompleto: function(){ //metodo o función en JavaScript
         return this.nombre + " " + this.apellido; //this hace referencia al objeto
+    },
+    get nombreEdad(){ //get es una palabra reservada para obtener un valor
+        return "El nombre es: "+this.nombre + ", Edad: " + this.edad;
     }
 }
 
@@ -70,3 +73,7 @@ console.log(personaArray);
 console.log("Distintas formas de imprimir un objeto forma 4: ");
 let personaString = JSON.stringify(persona);
 console.log(personaString);
+
+//Usamos el metodo get
+console.log("Usamos el metodo get");
+console.log(persona.nombreEdad);

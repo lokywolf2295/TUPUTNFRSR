@@ -93,3 +93,15 @@ console.log(persona.lang);
 console.log("Usamos el metodo set para Idiomas");
 persona.lang = "en";
 console.log(persona.lang);
+
+function Persona3(nombre, apellido, email){ //Función constructor
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.email = email;
+}
+let padre = new Persona3("Juan", "Perez", "jperez@gmail.com"); //new crea un nuevo objeto
+padre.nombre = "Carlos";//modificamos el valor de la propiedad nombre
+console.log(padre);
+
+let madre = new Persona3("Laura", "Quintero", "lquintero@gmail.com");
+console.log(madre);

@@ -151,3 +151,19 @@ console.log(padre);
 console.log(madre.tel);
 madre.tel = "11223344";
 console.log(madre.tel);
+
+//Uso del metodo call
+console.log("Uso del metodo call");
+let persona4 = {
+    nombre: "Juan",
+    apellido: "Perez",
+    nombreCompleto2: function(titulo, tel){
+        return titulo + ": " + this.nombre + " " + this.apellido + ", " + tel;
+    }
+}
+let persona5 = {
+    nombre: "Carlos",
+    apellido: "Lara"
+}
+console.log(persona4.nombreCompleto2("Lic", "55443322"));
+console.log(persona4.nombreCompleto2.call(persona5, "Ing", "11223344")); //El primer parametro es el objeto que va a utilizar el metodo y los demas parametros son los parametros del metodo

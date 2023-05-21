@@ -41,3 +41,4 @@ persona2.apellido = "Quintero";
 console.log(persona2.apellido);
 //console.log(persona2);
 
+//el profesor agrega los metodos get and set de apellido y comenta la linea 1

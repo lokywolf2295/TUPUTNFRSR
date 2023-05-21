@@ -1,5 +1,6 @@
 //let persona3 = new Persona3("Juan", "Perez"); //no se permite crear un objeto antes de haber definido o inicializado la clase que le permite hacer la instancia.
 
+//Clase Padre
 class Persona{ //por convención se usa mayúscula en el nombre de la clase
     constructor(nombre, apellido){
         this._nombre = nombre;
@@ -21,6 +22,21 @@ class Persona{ //por convención se usa mayúscula en el nombre de la clase
 
     set apellido(apellido){
         this._apellido = apellido;
+    }
+}
+
+//Clase Hija
+class Empleado extends Persona{
+    constructor(departamento){
+        this._departamento = departamento;
+    }
+
+    get departamento(){
+        return this._departamento;
+    }
+
+    set departamento(departamento){
+        this._departamento = departamento;
     }
 }
 

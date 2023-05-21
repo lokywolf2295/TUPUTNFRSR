@@ -27,7 +27,8 @@ class Persona{ //por convención se usa mayúscula en el nombre de la clase
 
 //Clase Hija
 class Empleado extends Persona{
-    constructor(departamento){
+    constructor(nombre, apellido, departamento){
+        super(nombre, apellido); //llama al constructor de la clase padre
         this._departamento = departamento;
     }
 
@@ -58,3 +59,7 @@ console.log(persona2.apellido);
 //console.log(persona2);
 
 //el profesor agrega los metodos get and set de apellido y comenta la linea 1
+
+let empleado1 = new Empleado("María", "Giménez", "Sistemas");
+console.log(empleado1);
+console.log(empleado1.nombre);

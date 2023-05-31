@@ -16,5 +16,10 @@ public class TestConversionObjetos {
         //((Escritor) empleado).getTipoEscritura(); //Se puede acceder a este metodo porque convertimos el objeto a la clase hija (Escritor
         Escritor escritor = (Escritor) empleado;
         escritor.getTipoEscritura();
-        }
+
+        //3. Convertir un objeto de la clase padre a la clase hija
+        //Upcasting
+        Empleado empleado2 = escritor;
+        System.out.println("empleado2 = " + empleado2.obtenerDetalles());
+}
 }

@@ -22,3 +22,9 @@ INSERT INTO estudiantes2022 (nombre, apellido, telefono, email) VALUES ("Juan", 
 
 -- Actualizar estudiante
 UPDATE estudiantes2022 SET nombre= "Juan Carlos", apellido="Garcia" WHERE idestudiantes2022=1;
+
+-- Eliminar estudiante
+DELETE FROM estudiantes2022 WHERE idestudiantes2022=1;
+
+-- Para modificar el idestudiantes2022 y comience en 1
+ALTER TABLE estudiantes2022 AUTO_INCREMENT = 1;

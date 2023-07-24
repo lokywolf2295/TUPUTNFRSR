@@ -26,11 +26,23 @@ public class EstudianteDAO {
                 var estudiante = new Estudiante();
                 //Asignamos los atributos al objeto estudiante
                 estudiante.setIdEstudiante(rs.getInt("idestudiantes2022"));
-
+                estudiante.setNombre(rs.getString("nombre"));
+                estudiante.setApellido(rs.getString("apellido"));
+                estudiante.setTelefono(rs.getString("telefono"));
+                estudiante.setEmail(rs.getString("email"));
+                //Agregamos el objeto estudiante a la lista estudiantes
+                estudiantes.add(estudiante);
             }
         } catch (Exception e) {
             System.out.println("Ocurió un error al seleccionar datos: " + e.getMessage());
         }
-
-    }
-}
+        finally {
+            try {
+                con.close();
+            } catch (Exception e) {
+                System.out.println("Ocurrió un error al cerrar la conexión: " + e.getMessage());
+            }
+        } //Fin try-catch-finally
+        return estudiantes;
+    } //Fin metodo listar
+} //Fin clase

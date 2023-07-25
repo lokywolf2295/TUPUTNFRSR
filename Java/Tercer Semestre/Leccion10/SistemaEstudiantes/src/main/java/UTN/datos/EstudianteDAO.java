@@ -91,9 +91,19 @@ public class EstudianteDAO {
             ps.setString(2, estudiante.getApellido());
             ps.setString(3, estudiante.getTelefono());
             ps.setString(4, estudiante.getEmail());
+            ps.execute();
+            return true; //Si se agrega el estudiante
         } catch (Exception e) {
             System.out.println("Ocurió un error al insertar datos: " + e.getMessage());
         }
+        finally {
+            try {
+                con.close();
+            } catch (Exception e) {
+                System.out.println("Ocurrió un error al cerrar la conexión: " + e.getMessage());
+            }
+        } //Fin try-catch-finally
+        return false;
     } //Fin metodo agregarEstudiante
 
     public static void main(String[] args) {

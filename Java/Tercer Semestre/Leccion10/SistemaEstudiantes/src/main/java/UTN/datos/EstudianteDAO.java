@@ -106,6 +106,34 @@ public class EstudianteDAO {
         return false;
     } //Fin metodo agregarEstudiante
 
+    //Método actualizar un estudiante
+    public boolean modificarEstidiante(Estudiante estudiante){
+        //Creamos algunos objetos que son necesarios para comunicarnos con la base de datos
+        PreparedStatement ps; //Envia la sentencia a la base de datos
+        Connection con = getConexion(); //Creamos una instancia de la clase Conexion
+        String sql = "UPDATE estudiantes2022 SET nombre = ?, apellido = ?, telefono = ?, email = ? WHERE idestudiantes2022 = ?"; //Sentencia SQL que se ejecutará en la base de datos
+        try {
+            ps = con.prepareStatement(sql);
+            ps.setString(1, estudiante.getNombre());
+            ps.setString(2, estudiante.getApellido());
+            ps.setString(3, estudiante.getTelefono());
+            ps.setString(4, estudiante.getEmail());
+            ps.setInt(5, estudiante.getIdEstudiante());
+            ps.execute();
+            return true; //Si se actualiza el estudiante
+        } catch (Exception e) {
+            System.out.println("Ocurió un error al actualizar datos: " + e.getMessage());
+        }
+        finally {
+            try {
+                con.close();
+            } catch (Exception e) {
+                System.out.println("Ocurrió un error al cerrar la conexión: " + e.getMessage());
+            }
+        } //Fin try-catch-finally
+        return false;
+    } //Fin metodo modificarEstudiante
+
     public static void main(String[] args) {
         //Listar los estudiantes
         var estudianteDao = new EstudianteDAO();

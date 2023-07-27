@@ -10,11 +10,12 @@ conexion = psycopg2.connect(
 try:
     with conexion: # Crear cursor para ejecutar sentencias SQL en PostgreSQL
         with conexion.cursor() as cursor:
-            sentencia = 'SELECT * FROM persona WHERE id_persona = %s' # Placeholder
-            id_persona = input('Digite un numero para id_persona: ')
-            cursor.execute(sentencia, (id_persona,))  # Ejecutar sentencia SQL
-            registros = cursor.fetchone()  # Obtener todos los registros de la consulta
-            print(registros)
+            sentencia = 'SELECT * FROM persona WHERE id_persona IN (1,2)'
+            # id_persona = input('Digite un numero para id_persona: ')
+            cursor.execute(sentencia)  # Ejecutar sentencia SQL
+            registros = cursor.fetchall()  # Obtener todos los registros de la consulta
+            for registro in registros:
+                print(registro)
 
 except Exception as e:
     print(f'Ocurrió un error: {e}')
@@ -22,4 +23,4 @@ finally:
     # Cerrar cursor
     conexion.close()
 
-# https://www.psycopg.org/docs/usage.html
+# https://www.psycopg.org/docs/usage.htm

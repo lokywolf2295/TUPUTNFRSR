@@ -8,14 +8,16 @@ conexion = bd.connect(
     database='test_bd'
 )
 try:
-    conexion.autocommit = False # Desactivar el auto guardadp en la BD
+    # conexion.autocommit = False # Desactivar el auto guardadp en la BD # esto no debería usarse
     cursor = conexion.cursor()
     sentencia = 'INSERT INTO persona (nombre, apellido, email)VALUES (%s, %s, %s)' # Placeholder
     valores = ('Maria', 'Esperanza', 'mesperanza@mail.com') # Tupla de valores
     cursor.execute(sentencia, valores)  # Ejecutar sentencia SQL
+    conexion.commit() # Confirmar cambios en la BD manualmente
     print('Termina la transacción')
 
 except Exception as e:
+    conexion.rollback() # Revertir cambios en la BD
     print(f'Ocurrió un error: {e}')
 finally:
     # Cerrar cursor

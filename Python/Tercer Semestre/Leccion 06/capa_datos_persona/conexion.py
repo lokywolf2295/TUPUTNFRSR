@@ -28,3 +28,21 @@ class Conexion:
                 sys.exit()
         else:
             return cls._conexion
+
+    @classmethod
+    def obtenerCursor(cls):
+        if cls._cursor is None:
+            try:
+                cls._cursor = cls.obtenerConexion().cursor()
+                log.debug(f'Se abrió el cursor con éxito: {cls._cursor}')
+                return cls._cursor
+            except Exception as e:
+                log.error(f'Ocurrió un error al obtener el cursor: {e}')
+                sys.exit()
+        else:
+            return cls._cursor
+
+
+if __name__ == '__main__':
+    Conexion.obtenerConexion()
+    Conexion.obtenerCursor()

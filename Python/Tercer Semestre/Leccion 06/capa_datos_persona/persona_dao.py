@@ -1,5 +1,6 @@
 from Persona import *
 from conexion import *
+from logger_base import log
 
 
 class personaDAO:
@@ -28,3 +29,10 @@ class personaDAO:
                     persona = Persona(registro[0], registro[1], registro[2], registro[3]) # cada registro equivale a una columna en la tabla
                     personas.append(persona)
                 return personas
+
+
+if __name__ == '__main__':
+    # Seleccionamos objetos
+    personas = personaDAO.seleccionar()
+    for persona in personas:
+        log.debug(persona)

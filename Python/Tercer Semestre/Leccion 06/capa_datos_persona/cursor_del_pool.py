@@ -13,7 +13,13 @@ class CursorDelPool:
         self._cursor = self._conexion.cursor()
         return self._cursor
 
-    def __exit__(self, exc_type, exc_val, exc_tb):
-        self.cursor.close()
-        self.cursor = None
-        return False
+    def __exit__(self, tipo_excepcion, valor_excepcion, detalle_excepcion):
+        log.debug('Se ejecuta método exit')
+        if valor_excepcion:
+            self._conexion.rollback()
+            log.error(f'Ocurrió una excepción: {valor_excepcion} {tipo_excepcion} {detalle_excepcion}')
+        else:
+            self._conexion.commit()
+            log.debug('Commit de la transacción')
+        self._cursor.close()
+        Conexion.liberarConexion(self._conexion)

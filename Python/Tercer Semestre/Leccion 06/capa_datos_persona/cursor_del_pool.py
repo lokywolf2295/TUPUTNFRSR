@@ -3,7 +3,7 @@ from conexion import Conexion
 
 
 class CursorDelPool:
-    def __init__(self, pool):
+    def __init__(self):
         self._conexion = None
         self._cursor = None
 
@@ -23,3 +23,12 @@ class CursorDelPool:
             log.debug('Commit de la transacción')
         self._cursor.close()
         Conexion.liberarConexion(self._conexion)
+
+
+if __name__ == '__main__':
+    # Obtenemos un cursor a partir de la conexión del pool
+    with CursorDelPool() as cursor:
+        log.debug('Dentro del bloque with')
+        cursor.execute('SELECT * FROM persona')
+        log.debug('Listado de personas')
+        log.debug(cursor.fetchall())

@@ -27,6 +27,12 @@ class Persona{ //por convención se usa mayúscula en el nombre de la clase
     nombreCompleto(){
         return this._nombre + ' ' + this._apellido;
     }
+
+    toString(){ //Regresa un string
+        //Se aplica polimorfismo (multiples formas en tiempo de ejecución)
+        //el método que se ejecuta depende si es una referencia de tipo padre o de tipo hijo
+        return this.nombreCompleto();
+    }
 }
 
 //Clase Hija
@@ -72,3 +78,7 @@ console.log(persona2.apellido);
 let empleado1 = new Empleado("María", "Giménez", "Sistemas");
 console.log(empleado1);
 console.log(empleado1.nombreCompleto());
+
+//Object.prototype.toString //prototype permite agregar metodos y atributos de manera dinamica a una clase
+console.log(empleado1.toString());
+

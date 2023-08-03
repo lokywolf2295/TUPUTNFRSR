@@ -23,6 +23,10 @@ class Persona{ //por convención se usa mayúscula en el nombre de la clase
     set apellido(apellido){
         this._apellido = apellido;
     }
+
+    nombreCompleto(){
+        return this._nombre + ' ' + this._apellido;
+    }
 }
 
 //Clase Hija
@@ -62,4 +66,4 @@ console.log(persona2.apellido);
 
 let empleado1 = new Empleado("María", "Giménez", "Sistemas");
 console.log(empleado1);
-console.log(empleado1.nombre);
+console.log(empleado1.nombreCompleto());

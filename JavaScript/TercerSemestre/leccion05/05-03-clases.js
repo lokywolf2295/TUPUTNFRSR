@@ -34,6 +34,14 @@ class Persona{ //por convención se usa mayúscula en el nombre de la clase
         //el método que se ejecuta depende si es una referencia de tipo padre o de tipo hijo
         return this.nombreCompleto();
     }
+
+    static saludar(){
+        console.log("Saludos desde método static");
+    }
+
+    static saludar2(persona){
+        console.log(persona.nombre + ' ' + persona.apellido);
+    }
 }
 
 //Clase Hija
@@ -83,3 +91,7 @@ console.log(empleado1.nombreCompleto());
 //Object.prototype.toString //prototype permite agregar metodos y atributos de manera dinamica a una clase
 console.log(empleado1.toString());
 console.log(persona1.toString());
+
+//persona1.saludar(); //no es posible llamar un método static desde un objeto
+Persona.saludar();
+Persona.saludar2(persona1);

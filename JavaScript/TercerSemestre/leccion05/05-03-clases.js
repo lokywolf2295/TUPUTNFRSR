@@ -95,3 +95,6 @@ console.log(persona1.toString());
 //persona1.saludar(); //no es posible llamar un método static desde un objeto
 Persona.saludar();
 Persona.saludar2(persona1);
+
+Empleado.saludar();
+Empleado.saludar2(empleado1);

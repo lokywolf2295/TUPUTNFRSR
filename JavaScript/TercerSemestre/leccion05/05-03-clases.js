@@ -3,7 +3,8 @@
 //Clase Padre
 class Persona{ //por convención se usa mayúscula en el nombre de la clase
     static contadorObjetosPersona = 0; //atributo de nuestra clase
-    
+    email = 'Valor default email'; //atributo de nuestros objetos
+
     constructor(nombre, apellido){
         this._nombre = nombre;
         this._apellido = apellido;
@@ -106,3 +107,7 @@ Empleado.saludar2(empleado1);
 //console.log(persona1.contadorObjetosPersona); //no debemos acceder por referencia al objeto, sino que debemos acceder por medio de la clase
 console.log(Persona.contadorObjetosPersona); //podemos acceder a un atributo static desde la clase padre
 console.log(Empleado.contadorObjetosPersona); //podemos acceder a un atributo static desde la clase hija
+
+console.log(persona1.email);
+console.log(empleado1.email); //se hereda el atributo de la clase padre
+console.log(Persona.email); //no se puede acceder a un atributo de un objeto porque no es static

@@ -2,14 +2,14 @@
 
 //Clase Padre
 class Persona{ //por convención se usa mayúscula en el nombre de la clase
-    static contadorObjetosPersona = 0; //atributo de nuestra clase
-    email = 'Valor default email'; //atributo de nuestros objetos
+    static contadorPersonas = 0; //atributo de nuestra clase
+    //email = 'Valor default email'; //atributo de nuestros objetos
 
     constructor(nombre, apellido){
         this._nombre = nombre;
         this._apellido = apellido;
-        Persona.contadorObjetosPersona++;
-        console.log('Se incrementa el contador: ' + Persona.contadorObjetosPersona);
+        this.idPersona = ++Persona.contadorPersonas;
+        //console.log('Se incrementa el contador: ' + Persona.contadorObjetosPersona);
     }
     
     //Métodos get y set
@@ -30,7 +30,7 @@ class Persona{ //por convención se usa mayúscula en el nombre de la clase
     }
 
     nombreCompleto(){
-        return this._nombre + ' ' + this._apellido;
+        return this.idPersona + ' ' + this._nombre + ' ' + this._apellido;
     }
 
     //Sobreescribiendo el método de la clase Padre (Object)
@@ -110,4 +110,8 @@ console.log(Empleado.contadorObjetosPersona); //podemos acceder a un atributo st
 
 console.log(persona1.email);
 console.log(empleado1.email); //se hereda el atributo de la clase padre
-console.log(Persona.email); //no se puede acceder a un atributo de un objeto porque no es static
+//console.log(Persona.email); //no se puede acceder a un atributo de un objeto porque no es static
+console.log(persona1.toString());
+console.log(persona2.toString());
+console.log(empleado1.toString());
+console.log(Persona.contadorPersonas);

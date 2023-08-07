@@ -2,9 +2,14 @@
 
 //Clase Padre
 class Persona{ //por convención se usa mayúscula en el nombre de la clase
+    static contadorPersonas = 0; //atributo de nuestra clase
+    //email = 'Valor default email'; //atributo de nuestros objetos
+
     constructor(nombre, apellido){
         this._nombre = nombre;
         this._apellido = apellido;
+        this.idPersona = ++Persona.contadorPersonas;
+        //console.log('Se incrementa el contador: ' + Persona.contadorObjetosPersona);
     }
     
     //Métodos get y set
@@ -25,7 +30,7 @@ class Persona{ //por convención se usa mayúscula en el nombre de la clase
     }
 
     nombreCompleto(){
-        return this._nombre + ' ' + this._apellido;
+        return this.idPersona + ' ' + this._nombre + ' ' + this._apellido;
     }
 
     //Sobreescribiendo el método de la clase Padre (Object)
@@ -33,6 +38,14 @@ class Persona{ //por convención se usa mayúscula en el nombre de la clase
         //Se aplica polimorfismo (multiples formas en tiempo de ejecución)
         //el método que se ejecuta depende si es una referencia de tipo padre o de tipo hijo
         return this.nombreCompleto();
+    }
+
+    static saludar(){
+        console.log("Saludos desde método static");
+    }
+
+    static saludar2(persona){
+        console.log(persona.nombre + ' ' + persona.apellido);
     }
 }
 
@@ -83,3 +96,22 @@ console.log(empleado1.nombreCompleto());
 //Object.prototype.toString //prototype permite agregar metodos y atributos de manera dinamica a una clase
 console.log(empleado1.toString());
 console.log(persona1.toString());
+
+//persona1.saludar(); //no es posible llamar un método static desde un objeto
+Persona.saludar();
+Persona.saludar2(persona1);
+
+Empleado.saludar();
+Empleado.saludar2(empleado1);
+
+//console.log(persona1.contadorObjetosPersona); //no debemos acceder por referencia al objeto, sino que debemos acceder por medio de la clase
+console.log(Persona.contadorObjetosPersona); //podemos acceder a un atributo static desde la clase padre
+console.log(Empleado.contadorObjetosPersona); //podemos acceder a un atributo static desde la clase hija
+
+console.log(persona1.email);
+console.log(empleado1.email); //se hereda el atributo de la clase padre
+//console.log(Persona.email); //no se puede acceder a un atributo de un objeto porque no es static
+console.log(persona1.toString());
+console.log(persona2.toString());
+console.log(empleado1.toString());
+console.log(Persona.contadorPersonas);

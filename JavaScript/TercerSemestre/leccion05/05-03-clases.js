@@ -1,73 +1,84 @@
 //let persona3 = new Persona3("Juan", "Perez"); //no se permite crear un objeto antes de haber definido o inicializado la clase que le permite hacer la instancia.
 
 //Clase Padre
-class Persona{ //por convención se usa mayúscula en el nombre de la clase
-    static contadorPersonas = 0; //atributo de nuestra clase
-    //email = 'Valor default email'; //atributo de nuestros objetos
+class Persona {
+  //por convención se usa mayúscula en el nombre de la clase
+  static contadorPersonas = 0; //atributo de nuestra clase
+  //email = 'Valor default email'; //atributo de nuestros objetos
 
-    constructor(nombre, apellido){
-        this._nombre = nombre;
-        this._apellido = apellido;
-        this.idPersona = ++Persona.contadorPersonas;
-        //console.log('Se incrementa el contador: ' + Persona.contadorObjetosPersona);
-    }
-    
-    //Métodos get y set
-    get nombre(){
-        return this._nombre;
-    }
+  static get MAX_OBJ() {
+    //Este método simula una constante
+    return 5;
+  }
 
-    get apellido(){
-        return this._apellido;
+  constructor(nombre, apellido) {
+    this._nombre = nombre;
+    this._apellido = apellido;
+    if (Persona.contadorPersonas < Persona.MAX_OBJ) {
+      this.idPersona = ++Persona.contadorPersonas;
+    } else {
+      console.log("Se han superado el máximo de objetos permitidos");
     }
+    //console.log('Se incrementa el contador: ' + Persona.contadorObjetosPersona);
+  }
 
-    set nombre(nombre){
-        this._nombre = nombre;
-    }
+  //Métodos get y set
+  get nombre() {
+    return this._nombre;
+  }
 
-    set apellido(apellido){
-        this._apellido = apellido;
-    }
+  get apellido() {
+    return this._apellido;
+  }
 
-    nombreCompleto(){
-        return this.idPersona + ' ' + this._nombre + ' ' + this._apellido;
-    }
+  set nombre(nombre) {
+    this._nombre = nombre;
+  }
 
-    //Sobreescribiendo el método de la clase Padre (Object)
-    toString(){ //Regresa un string
-        //Se aplica polimorfismo (multiples formas en tiempo de ejecución)
-        //el método que se ejecuta depende si es una referencia de tipo padre o de tipo hijo
-        return this.nombreCompleto();
-    }
+  set apellido(apellido) {
+    this._apellido = apellido;
+  }
 
-    static saludar(){
-        console.log("Saludos desde método static");
-    }
+  nombreCompleto() {
+    return this.idPersona + " " + this._nombre + " " + this._apellido;
+  }
 
-    static saludar2(persona){
-        console.log(persona.nombre + ' ' + persona.apellido);
-    }
+  //Sobreescribiendo el método de la clase Padre (Object)
+  toString() {
+    //Regresa un string
+    //Se aplica polimorfismo (multiples formas en tiempo de ejecución)
+    //el método que se ejecuta depende si es una referencia de tipo padre o de tipo hijo
+    return this.nombreCompleto();
+  }
+
+  static saludar() {
+    console.log("Saludos desde método static");
+  }
+
+  static saludar2(persona) {
+    console.log(persona.nombre + " " + persona.apellido);
+  }
 }
 
 //Clase Hija
-class Empleado extends Persona{
-    constructor(nombre, apellido, departamento){
-        super(nombre, apellido); //llama al constructor de la clase padre
-        this._departamento = departamento;
-    }
+class Empleado extends Persona {
+  constructor(nombre, apellido, departamento) {
+    super(nombre, apellido); //llama al constructor de la clase padre
+    this._departamento = departamento;
+  }
 
-    get departamento(){
-        return this._departamento;
-    }
+  get departamento() {
+    return this._departamento;
+  }
 
-    set departamento(departamento){
-        this._departamento = departamento;
-    }
+  set departamento(departamento) {
+    this._departamento = departamento;
+  }
 
-    //Sobreescritura: redefinir el método en la clase hija
-    nombreCompleto(){
-        return super.nombreCompleto() + ', ' + this._departamento;
-    }
+  //Sobreescritura: redefinir el método en la clase hija
+  nombreCompleto() {
+    return super.nombreCompleto() + ", " + this._departamento;
+  }
 }
 
 let persona1 = new Persona("Juan", "Perez");
@@ -115,3 +126,15 @@ console.log(persona1.toString());
 console.log(persona2.toString());
 console.log(empleado1.toString());
 console.log(Persona.contadorPersonas);
+let persona3 = new Persona("Carla", "Pertosi");
+console.log(persona3.toString());
+console.log(Persona.contadorPersonas);
+
+console.log(Persona.MAX_OBJ);
+Persona.MAX_OBJ = 10; //no se puede modificar ni alterar el valor de una constante
+console.log(Persona.MAX_OBJ);
+
+let persona4 = new Persona("Franco", "Díaz");
+console.log(persona4.toString());
+let persona5 = new Persona("Mariana", "García");
+console.log(persona5.toString());

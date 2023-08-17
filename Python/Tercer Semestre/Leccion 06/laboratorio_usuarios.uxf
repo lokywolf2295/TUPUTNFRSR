@@ -1,0 +1,71 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>0</x><y>0</y><w>210</w><h>230</h></coordinates><panel_attributes>&lt;&lt;conexion&gt;&gt;
+--
+_-DATABASE: String_
+_-USERNAME: String_
+_-PASSWORD: String_
+_-DB PORT: String_
+_-HOST: String_
+_-MIN_CON: int_
+_-MAX_CON: int_
+_-pool: Pool_
+--
+_+obtenerPool(cls): P_
+_+obtenerConexion(cls): Conection_
+_cerrarConexiones(cls)_
+--
+Responsabilidades:
+Administrar la conexion a la base 
+de datos</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>0</y><w>210</w><h>170</h></coordinates><panel_attributes>&lt;&lt;Usuario&gt;&gt;
+--
+-id_usuario: int
+-username: String
+-pasword: String
+--
++_str_(): String
++metodo Get/Set de cada atributo
+--
+Responsabilidades:
+Crear objetos de la entidad
+de Usuario</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>270</y><w>240</w><h>220</h></coordinates><panel_attributes>&lt;&lt;PersonaDao&gt;&gt;
+--
+_SELECCIONAR: String_
+_INSERTAR: String_
+_ACTUALIZAR: String_
+_ELIMINAR: String_
+--
+_+seleccionar(cls)_
+_+insertar(cls, persona)_
+_+actualizar(cls, persona)_
+_+eliminar(cls, persona)_
+--
+Responsabilidades:
+Realizar las operaciones  CRUD
+(Create-Read-Update-Delete) 
+sobre la entidad Usuario (tabla usuario)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>350</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>80;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>160</y><w>30</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>10</x><y>270</y><w>250</w><h>210</h></coordinates><panel_attributes>&lt;&lt;CursorDelPool&gt;&gt;
+--
+-conn: String
+-cursor: String
+--
++_init_(self)
++_enter_(self)
++_exit_(self)
+--
+Responsabilidades:
+Administrar el objeto conexion y cursor 
+obtenidos a partir del pool de conexiones. 
+Los metodos enter y exit son la 
+implementación del uso de "with" 
+para trabajar con el cursor.</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>90</x><y>220</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;50;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>600</x><y>270</y><w>250</w><h>210</h></coordinates><panel_attributes>&lt;&lt;logger_base&gt;&gt;
+--
++logger:loggin
+--
+Responsabilidades:
+Configuración de loggin para toda la aplicación</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>590</x><y>10</y><w>250</w><h>210</h></coordinates><panel_attributes>&lt;&lt;MenuAppUsuario&gt;&gt;
+--
+Responsabilidades:
+- Contiene un menú de 5 opciones:
+1) Listar Usuarios
+2) Agregar Usuario
+3) Actualizar Usuario
+4) Eliminar Usuario
+5) Salir</panel_attributes><additional_attributes></additional_attributes></element></diagram>

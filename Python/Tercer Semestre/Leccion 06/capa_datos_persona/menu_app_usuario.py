@@ -1,3 +1,4 @@
+from Usuario import Usuario
 from usuario_dao import UsuarioDao
 from logger_base import log
 
@@ -14,6 +15,12 @@ while opcion != 5:
         usuarios = UsuarioDao.seleccionar()
         for usuario in usuarios:
             log.info(usuario)
+    elif opcion == 2:
+        username_var = input('Digite el nombre de usuario: ')
+        password_var = input('Digite su contraseña: ')
+        usuario = Usuario(username=username_var, password=password_var)
+        usuario_insertado = UsuarioDao.insertar(usuario)
+        log.info(f'Usuario insertado: {usuario_insertado}')
 
 else:
     log.info('Salimos de la aplicación, Hasta pronto!!!')

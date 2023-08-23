@@ -25,6 +25,7 @@ public class SistemaEstudiantesApp {
     //Método para mostrar el menú
     public static void mostrarMenu(){
         System.out.println("""
+        
         ******* Sistema de Estudiantes *******
         1. Listar estudiantes
         2. Buscar estudiante
@@ -32,8 +33,7 @@ public class SistemaEstudiantesApp {
         4. Modificar estudiante
         5. Eliminar estudiante
         6. Salir
-        Elija una opción:
-        """);
+        Elija una opción: """);
     } //Fin metodo mostrarMenu
 
     //Método para ejecutar las opciones del menú, va a regresar un booleano, ya que es el que

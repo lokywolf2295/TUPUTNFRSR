@@ -8,4 +8,13 @@ print(f"a: {a:.2f}")
 
 # Notación exponencial (valores positivos y negativos)
 a = 3e5
-print(f"a: {a}")
+print(f"a: {a: .2f}")
+
+a = 3e-5
+print(f"a: {a: .5f}")
+
+# Cualquier calculo que incluye un float, el resultado es float
+
+a = 4.0 + 5
+print(a)
+print(type(a))

@@ -7,3 +7,12 @@ print(f'valor: {valor}, resultado: {resultado}')
 valor = 15
 resultado = bool(valor)
 print(f'valor: {valor}, resultado: {resultado}')
+
+# Tipo string -> False '', True demás valores
+valor = ''
+resultado = bool(valor)
+print(f'valor: {valor}, resultado: {resultado}')
+
+valor = 'Hola'
+resultado = bool(valor)
+print(f'valor: {valor}, resultado: {resultado}')

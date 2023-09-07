@@ -45,3 +45,9 @@ print(f'valor de un diccionario vacío: {valor}, resultado: {resultado}')
 valor = {'a': 1, 'b': 2}
 resultado = bool(valor)
 print(f'valor de un diccionario con elementos: {valor}, resultado: {resultado}')
+
+# Sentencias de control con bool
+if bool(''):
+    print('Regresa verdadero')
+else:
+    print('Regresa falso')

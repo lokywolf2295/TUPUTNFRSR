@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>utn</groupId>
-    <artifactId>estudiantes</artifactId>
+    <artifactId>Estudiantes2022</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>estudiantes</name>
-    <description>estudiantes</description>
+    <name>Estudiantes2022</name>
+    <description>Estudiantes2022</description>
     <properties>
         <java.version>20</java.version>
     </properties>

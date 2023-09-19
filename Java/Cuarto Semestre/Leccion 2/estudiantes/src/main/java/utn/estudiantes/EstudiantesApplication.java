@@ -72,7 +72,7 @@ public class EstudiantesApplication implements CommandLineRunner {
                 if (estudiante != null){
                     logger.info("Estudiante encontrado: " + estudiante + nl);
                 }else{
-                    logger.info(nl + "Estudiante No encontrado" + estudiante + nl);
+                    logger.info(nl + "Estudiante No encontrado " + idEstudiante + nl);
                 }
             }
             case 3 -> {// Agregar estudiante

@@ -6,7 +6,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import utn.estudiantes.modelo.Estudiantes2022;
 import utn.estudiantes.servicio.EstudianteServicio;
+
+
+import java.util.List;
+import java.util.Scanner;
 
 @SpringBootApplication
 public class EstudiantesApplication implements CommandLineRunner {
@@ -27,5 +32,25 @@ public class EstudiantesApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         logger.info(nl + "Ejecutando el método run de Spring..." + nl);
+        var salir = false;
+        var consola = new Scanner(System.in);
+        while (!salir){
+            mostrarMenu();
+            salir = ejecutarOpciones(consola);
+            logger.info(nl);
+        }// fin ciclo while
+    }
+
+    private void mostrarMenu(){
+        logger.info(nl);
+        logger.info("""
+                ****** Sistema de Estudiantes ******
+                1. Listar Estudiantes
+                2. Buscar Estudiante
+                3. Agregar Estudiante
+                4. Modificar Estudiante
+                5. Eliminar Estudiante
+                6. Salir
+                Elija una opción: """);
     }
 }

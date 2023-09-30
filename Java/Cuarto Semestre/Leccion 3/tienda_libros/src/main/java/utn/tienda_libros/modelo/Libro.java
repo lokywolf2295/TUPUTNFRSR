@@ -21,5 +21,5 @@ public class Libro {
     String nombreLibro;
     String autor;
     Double precio;
-    Integer stock;
+    Integer existencias;
 }

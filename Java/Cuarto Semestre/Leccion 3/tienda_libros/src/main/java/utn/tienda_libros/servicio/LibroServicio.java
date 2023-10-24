@@ -18,7 +18,7 @@ public class LibroServicio implements ILibroServicio{
     }
 
     @Override
-    public Libro guardarLibroPorId(Integer idLibro) {
+    public Libro buscarLibroPorId(Integer idLibro) {
         Libro libro = libroRepositorio.findById(idLibro).orElse(null);
         return libro;
     }

@@ -14,6 +14,10 @@ public class LibroForm extends JFrame {
     LibroServicio libroServicio;
     private JPanel panel;
     private JTable tablaLibros;
+    private JTextField libroTexto;
+    private JTextField autorTexto;
+    private JTextField precioTexto;
+    private JTextField existenciasTextoTextField;
     private DefaultTableModel tablaModeloLibros;
 
     @Autowired

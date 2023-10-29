@@ -17,6 +17,7 @@ public class LibroForm extends JFrame {
     LibroServicio libroServicio;
     private JPanel panel;
     private JTable tablaLibros;
+    private JTextField idTexto;
     private JTextField libroTexto;
     private JTextField autorTexto;
     private JTextField precioTexto;
@@ -78,6 +79,12 @@ public class LibroForm extends JFrame {
 
     private void cargarLibroSeleccionado(){
         //Los indices de las colunas empiezan en 0
+        var renglon = tablaLibros.getSelectedRow();
+        if(renglon != -1){
+            String idLibro = tablaLibros.getModel().getValueAt(renglon, 0).toString();
+            mostrarMensaje("Seleccione un libro");
+            return;
+        }
     }
 
     private void limpiarFormulario(){
@@ -92,6 +99,8 @@ public class LibroForm extends JFrame {
     }
 
     private void createUIComponents() {
+        idTexto = new JTextField("");
+        idTexto.setVisible(false);
         this.tablaModeloLibros = new DefaultTableModel(0,5);
         String[] cabecera = {"Id", "Libro", "Autor", "Precio", "Existencias"};
         this.tablaModeloLibros.setColumnIdentifiers(cabecera);

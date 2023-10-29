@@ -8,6 +8,8 @@ import utn.tienda_libros.servicio.LibroServicio;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 
 @Component
@@ -29,6 +31,13 @@ public class LibroForm extends JFrame {
         this.libroServicio = libroServicio;
         iniciarForma();
         agregarButton.addActionListener(e -> agregarLibro());
+        tablaLibros.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                cargarLibroSeleccionado();
+            }
+        });
     }
 
     private void iniciarForma() {
@@ -65,6 +74,10 @@ public class LibroForm extends JFrame {
         mostrarMensaje("Se agrego el libro ...");
         limpiarFormulario();
         listarLibros();
+    }
+
+    private void cargarLibroSeleccionado(){
+        //Los indices de las colunas empiezan en 0
     }
 
     private void limpiarFormulario(){

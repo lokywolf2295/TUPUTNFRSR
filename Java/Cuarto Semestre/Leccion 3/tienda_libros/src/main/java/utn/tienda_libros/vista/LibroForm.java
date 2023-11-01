@@ -8,6 +8,8 @@ import utn.tienda_libros.servicio.LibroServicio;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
@@ -39,6 +41,7 @@ public class LibroForm extends JFrame {
                 cargarLibroSeleccionado();
             }
         });
+        modificarButton.addActionListener(e -> modificarLibro());
     }
 
     private void iniciarForma() {
@@ -94,6 +97,20 @@ public class LibroForm extends JFrame {
         }
     }
 
+    private void modificarLibro(){
+        if(idTexto.equals("")){
+            mostrarMensaje("Debes seleccionar un registro en la tabla");
+        }
+        else {
+            //Verificamos que nombre del libro no sea nulo
+            if(libroTexto.getText().equals("")){
+                mostrarMensaje("Ingrese el nombre del libro");
+                libroTexto.requestFocusInWindow();
+                return;
+            }
+
+        }
+    }
     private void limpiarFormulario(){
         libroTexto.setText("");
         autorTexto.setText("");

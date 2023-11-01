@@ -21,7 +21,7 @@ public class LibroForm extends JFrame {
     private JTextField libroTexto;
     private JTextField autorTexto;
     private JTextField precioTexto;
-    private JTextField existenciasTextoTextField;
+    private JTextField existenciasTexto;
     private JButton agregarButton;
     private JButton modificarButton;
     private JButton eliminarButton;
@@ -64,7 +64,7 @@ public class LibroForm extends JFrame {
         var nombreLibro = libroTexto.getText();
         var autor = autorTexto.getText();
         var precio = Double.parseDouble(precioTexto.getText());
-        var existencias = Integer.parseInt(existenciasTextoTextField.getText());
+        var existencias = Integer.parseInt(existenciasTexto.getText());
         //Creamos el objeto de Libro
         var libro = new Libro(null, nombreLibro, autor, precio, existencias);
         //libro.setNombreLibro(nombreLibro);
@@ -82,8 +82,15 @@ public class LibroForm extends JFrame {
         var renglon = tablaLibros.getSelectedRow();
         if(renglon != -1){
             String idLibro = tablaLibros.getModel().getValueAt(renglon, 0).toString();
-            mostrarMensaje("Seleccione un libro");
-            return;
+            idTexto.setText(idLibro);
+            String nombreLibro = tablaLibros.getModel().getValueAt(renglon, 1).toString();
+            libroTexto.setText(nombreLibro);
+            String autor = tablaLibros.getModel().getValueAt(renglon, 2).toString();
+            autorTexto.setText(autor);
+            String precio = tablaLibros.getModel().getValueAt(renglon, 3).toString();
+            precioTexto.setText(precio);
+            String existencias = tablaLibros.getModel().getValueAt(renglon, 4).toString();
+            existenciasTexto.setText(existencias);
         }
     }
 
@@ -91,7 +98,7 @@ public class LibroForm extends JFrame {
         libroTexto.setText("");
         autorTexto.setText("");
         precioTexto.setText("");
-        existenciasTextoTextField.setText("");
+        existenciasTexto.setText("");
     }
 
     private void mostrarMensaje(String mensaje){
